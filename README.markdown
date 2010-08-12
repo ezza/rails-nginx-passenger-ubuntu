@@ -50,12 +50,6 @@ Verify that hostname is set
     
     hostname
 
-Install mysql
----------------
-
-This should be installed before Ruby Enterprise Edition becouse that will install the mysql gem.
-
-    sudo apt-get install mysql-server libmysqlclient15-dev    
 Gemrc
 -------
 
@@ -66,6 +60,14 @@ Add the following lines to ~/.gemrc, this will speed up gem installation and pre
     - http://gems.rubyforge.org
     - http://gems.github.com
     gem: --no-ri --no-rdoc
+
+
+Install mysql
+---------------
+
+This should be installed before Ruby Enterprise Edition becouse that will install the mysql gem.
+
+    sudo apt-get install mysql-server libmysqlclient15-dev    
 
 
 Ruby Enterprise Edition
@@ -79,10 +81,10 @@ Install package required by ruby enterprise, C compiler, Zlib development header
 
 Download and install Ruby Enterprise Edition
 
-    wget http://rubyforge.org/frs/download.php/66162/ruby-enterprise-X.X.X-ZZZZ.ZZ.tar.gz
-    tar xvfz ruby-enterprise-X.X.X-ZZZZ.ZZ.tar.gz 
-    rm ruby-enterprise-X.X.X-ZZZZ.ZZ.tar.gz 
-    cd ruby-enterprise-X.X.X-ZZZZ.ZZ/
+    wget http://rubyforge.org/frs/download.php/71096/ruby-enterprise-1.8.7-2010.02.tar.gz
+    tar xvfz ruby-enterprise-1.8.7-2010.02.tar.gz
+    rm ruby-enterprise-1.8.7-2010.02.tar.gz
+    cd ruby-enterprise-1.8.7-2010.02/
     sudo ./installer
     
     

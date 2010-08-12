@@ -69,7 +69,6 @@ This should be installed before Ruby Enterprise Edition becouse that will instal
 
     sudo apt-get install mysql-server libmysqlclient15-dev    
 
-
 Ruby Enterprise Edition
 ------------------------
 
@@ -97,7 +96,7 @@ Add Ruby Enterprise bin to PATH
 Verify the ruby installation
 
     ruby -v
-    ruby 1.8.7 (2009-06-12 patchlevel 174) [x86_64-linux], MBARI 0x6770, Ruby Enterprise Edition 20090928
+    ruby 1.8.7 (2010-04-19 patchlevel 253) [x86_64-linux], MBARI 0x6770, Ruby Enterprise Edition 2010.02
 
 Update RubyGems
 ---------------
@@ -112,15 +111,15 @@ Installing git
 NGINX
 -------
 
-Automatically install NGINX compiled with Passenger & SSL into /opt/NGINX/
+Automatically install NGINX compiled with Passenger & SSL into /opt/nginx/
 
-    sudo /opt/ruby/bin/passenger-install-NGINX-module --auto --prefix=/opt/NGINX/ --auto-download --extra-configure-flags=--with-http_ssl_module
+    sudo /opt/ruby/bin/passenger-install-nginx-module --auto --prefix=/opt/nginx/ --auto-download --extra-configure-flags=--with-http_ssl_module
 
 
 NGINX init script
 -------------------
 
-More information on http://wiki.NGINX.org/NGINX-init-ubuntu
+More information on http://wiki.nginx.org/nginx-init-ubuntu
 
 This command will download the latest version of my init script, copy it to /etc/init.d/nginx and update permissions.
 
@@ -240,7 +239,7 @@ Check so the rails app start as normal
     
     ruby script/server
 
-    sudo vim /opt/nginx/conf/NGINX.conf
+    sudo vim /opt/nginx/conf/nginx.conf
     
 Add a new virtual host
 

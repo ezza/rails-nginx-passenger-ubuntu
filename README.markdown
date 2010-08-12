@@ -1,7 +1,7 @@
-My rails-NGINX-ree-passenger-ubuntu stack
+My Rails, Nginx, REE, Passenger, Ubuntu stack
 ============================
 
-My notes on setting up a simple production server with Ubuntu 10.04 LTS, NGINX, Passenger, Ruby Enterprise Edition and Mysql for Rails 2.3.5
+My notes on setting up a simple production server with Ubuntu 10.04 LTS, NGINX, Passenger, Ruby Enterprise Edition 1.8.7 and Mysql for Rails 2.3.8/3.0
 
 This guide assumes you have installed Ubuntu 10.04 LTS (with no modules (optional)) on a server somewhere and you have root access via sudo.
 
@@ -169,7 +169,7 @@ Once the source is downloaded, uncompress it:
 
 Now configure and make:
 
-    cd ImageMagick-6.5.0-0
+    cd ImageMagick-6.6.3-4
     ./configure
     make
     sudo make install

@@ -210,9 +210,10 @@ If your deploying with Capistrano, you must modify a few things to get it to use
 Edit /etc/ssh/sshd_config and add the following to the bottom of the file:
 
     PermitUserEnvironment yes
+    
 Then reboot sshd by running:
 
-    /etc/init.d/ssh reload
+    sudo /etc/init.d/ssh reload
     
 Configuring the PATH
 
@@ -220,7 +221,7 @@ Edit ~/.ssh/environment, and put something like this inside:
 
     PATH=/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
     
-**OR is it doesn't exist you can do this to add it with one command:**
+**OR if it doesn't exist you can do this to add it with one command:**
 
     echo "PATH=/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games" > ~/.ssh/environment
     

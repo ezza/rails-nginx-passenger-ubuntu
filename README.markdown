@@ -157,7 +157,9 @@ If you want to install the latest version of ImageMagick. I used MiniMagick that
 
     sudo apt-get install libperl-dev gcc libjpeg62-dev libbz2-dev libtiff4-dev libwmf-dev libz-dev libpng12-dev libx11-dev libxt-dev libxext-dev libxml2-dev libfreetype6-dev liblcms1-dev libexif-dev perl libjasper-dev libltdl3-dev graphviz gs-gpl pkg-config
 
-Use wget to grab the source from ImageMagick.org.
+Download the latest source:
+    
+    wget ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick.tar.gz
 
 Once the source is downloaded, uncompress it:
 
